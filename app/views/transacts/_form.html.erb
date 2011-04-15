@@ -1,0 +1,28 @@
+<%= form_for(@transact) do |f| %>
+  <% if @transact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transact.errors.count, "error") %> prohibited this transact from being saved:</h2>
+
+      <ul>
+      <% @transact.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<%= f.hidden_field :atm, :value => @transact.atm.id %>
+	<%= f.fields_for @transact.user do |u| %>
+		<%= u.label :name %>
+	  <%= u.text_field :name %><br/>
+	  <%= u.label :password, 'PIN' %>
+	  <%= u.password_field :password %><br/>
+	<% end %>
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="actions">
+	  <%= f.submit 'Withdraw Funds' %>
+  </div>
+<% end %>

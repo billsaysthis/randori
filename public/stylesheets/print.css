@@ -1,0 +1,16 @@
+body, #content, h1, label {
+  background-color: #fff; color: #000;
+}
+
+body, p, ol, ul {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   20px;
+  line-height: 18px;
+}
+
+#content {
+  width: 320px;
+  margin: 1em 2em;
+  padding: 1em;
+  border: none;
+}

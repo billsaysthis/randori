@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Randori</title>
+  <title>Randori ATM</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="content">
+		<h1>Randori ATM</h1>
+	  <p class="notice"><%= notice %></p>
+	  <%= raw(alert_display(alert)) %>
+		<%= yield %>
+	</div>
 </body>
 </html>

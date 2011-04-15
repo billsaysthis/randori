@@ -1,0 +1,61 @@
+body { background-color: #fff; color: #333; }
+
+body, p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+#content {
+  width: 320px;
+  margin: 10px auto;
+  padding: 1em;
+  border: 3px solid #0000bb;
+}
+h1, label {color:#0000bb;}
+#content, h1, label { background-color:#ccc;}
+#transact_user_name {margin-left: 14px;}
+#transact_user_password {margin-left: 30px;}
+
+input[type="submit"] {
+  margin-top: 1em;
+  font-size: 126%;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {color: green;}
+
+.bold {font-weight: bold;}
+
+.field_with_errors {
+  background-color: red;
+  display: inline;
+}
+
+#error_explanation {
+  width: 94%;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin: 0 auto 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

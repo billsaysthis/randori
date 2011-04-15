@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.6'
 gem 'sqlite3'
 gem 'jquery-rails', '0.2.7'
+gem "devise"
 
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'

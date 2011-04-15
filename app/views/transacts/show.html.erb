@@ -1,0 +1,20 @@
+<h2>Your Withdrawal</h2>
+
+<p>
+  <b>Account:</b>
+  <%= @transact.user.name %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= number_to_currency @transact.amount %>
+</p>
+
+<p>
+  <b>Balance:</b>
+  <%= number_to_currency @transact.user.balance %>
+</p>
+
+<%= button_to 'Another Withdrawal', root_path %>
+
+<%= cash_available @transact.atm %>
