@@ -16,10 +16,8 @@ class User < ActiveRecord::Base
   validate :valid_pin, :on => :create
   
   def valid_pin
-    if (/[0-9]{4}/ =~ password) == nil
-        errors.add(:password, "must be composed only of digits")
-      end
-    end
+    errors.add(:password, "must be composed only of digits") if (/[0-9]{4}/ =~ password) == nil
+  end
 
   def withdrawal amount
     new_balance = balance.to_i - amount.to_i

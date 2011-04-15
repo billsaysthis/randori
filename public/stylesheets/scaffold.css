@@ -9,11 +9,13 @@ body, p {
 #content {
   width: 320px;
   margin: 10px auto;
-  padding: 1em;
+  padding: 0;
   border: 3px solid #0000bb;
 }
-h1, label {color:#0000bb;}
-#content, h1, label { background-color:#ccc;}
+#inner-content {padding: 1em;}
+h1 {background-color:#000; color:#fff; padding: 20px 0px 6px 3px; margin-top: 0;}
+label {color:#0000bb; font-weight: bold;}
+#content, label { background-color:#ccc;}
 #transact_user_name {margin-left: 14px;}
 #transact_user_password {margin-left: 30px;}
 
